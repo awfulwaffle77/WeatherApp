@@ -3,23 +3,62 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.selab.controller.Controller">
+<GridPane alignment="center" hgap="10" style="-fx-background-color: #FFFFFF;" stylesheets="@../resources/styles.css" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.selab.controller.Controller">
    <columnConstraints>
-      <ColumnConstraints />
+      <ColumnConstraints halignment="CENTER" hgrow="NEVER" />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="392.0" prefWidth="513.0">
+      <AnchorPane prefHeight="392.0" prefWidth="513.0" style="-fx-padding-left: 50px;" styleClass="title">
          <children>
-            <VBox prefHeight="392.0" prefWidth="131.0" style="-fx-background-color: #FF0000;">
-
-            </VBox>
-            <Button fx:id="button" layoutX="256.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleMe" prefHeight="27.0" prefWidth="81.0" text="Button" />
-            <Label fx:id="label1" layoutX="163.0" layoutY="271.0" prefHeight="27.0" prefWidth="268.0" style="-fx-alignment: center;" text="This is great" />
-            <ImageView fx:id="weather_icon" fitHeight="129.0" fitWidth="268.0" layoutX="181.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="button" layoutX="406.0" layoutY="172.0" mnemonicParsing="false" onAction="#searchTemp" prefHeight="26.0" prefWidth="29.0" text="🔍" />
+            <ImageView fx:id="weather_icon" fitHeight="68.0" fitWidth="69.0" layoutX="55.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+            <ChoiceBox fx:id="box_countries" layoutX="115.0" layoutY="173.0" prefHeight="26.0" prefWidth="70.0" />
+            <ChoiceBox fx:id="box_cities" layoutX="242.0" layoutY="173.0" prefWidth="150.0" />
+            <ImageView fitHeight="94.0" fitWidth="123.0" layoutX="27.0" layoutY="21.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../resources/images/sun.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label11" layoutX="45.0" layoutY="172.0" prefHeight="26.0" prefWidth="69.0" style="-fx-alignment: center;" text="Country:">
+               <font>
+                  <Font name="FiraCode-Retina" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="label111" layoutX="185.0" layoutY="173.0" prefHeight="26.0" prefWidth="69.0" style="-fx-alignment: center;" text="City:">
+               <font>
+                  <Font name="Fira Code Retina" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="description" layoutX="69.0" layoutY="279.0" prefHeight="44.0" prefWidth="176.0">
+               <font>
+                  <Font name="Fira Code Medium" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="wind_speed" layoutX="285.0" layoutY="287.0" prefHeight="26.0" prefWidth="195.0">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="37.0" prefHeight="54.0" prefWidth="338.0" styleClass="ttle" text="Yet Another Weather App">
+               <font>
+                  <Font name="Fira Code Medium" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="humidity" layoutX="285.0" layoutY="248.0" prefHeight="26.0" prefWidth="195.0">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="temperature" layoutX="127.0" layoutY="226.0" prefHeight="44.0" prefWidth="60.0">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>
