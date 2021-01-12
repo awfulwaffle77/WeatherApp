@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Fira Code Retina';
+    src: url("fonts/FiraCode-Retina.ttf");
+}
+
+.root{
+    -fx-font: 12px "Fira Code Retina";
+}
+
+.ttle{
+    -fx-font: 20px "Fira Code Retina";
+}

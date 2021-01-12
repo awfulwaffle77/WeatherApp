@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class WeatherAPI {
-    final private String APIKey = "";
+    final private String APIKey = "4a901bf01c6279df6fda7143a2d8c9e7";
     final private String baseURL = "https://api.openweathermap.org/data/2.5/weather?q=";
     final private String APPID = "&APPID=";
     private List<String> requiredArgs;
@@ -22,6 +22,7 @@ public class WeatherAPI {
         requiredArgs = new ArrayList<String>();
         requiredArgs.add("main");
         requiredArgs.add("weather");
+        requiredArgs.add("wind");
     }
 
     public Map<String, String> getWeather(String city, String country) throws IOException {
