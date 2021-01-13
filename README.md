@@ -5,7 +5,7 @@
 A JavaFX GUI Application written in (**YOU GUESSED IT!**) Java. The countries and cities are read from the file in 
 `resources/cities.txt` as requested.
 
-![Application Image](https://i.imgur.com/SldWqW2.jpg)
+![Application Image](https://i.imgur.com/JA0kR4v.jpg)
 
 ## Diagrams
 
