@@ -8,14 +8,10 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.Font;
 import ro.mta.selab.model.History;
 import ro.mta.selab.model.Weather;
 import ro.mta.selab.model.WeatherAPI;
 import ro.mta.selab.view.CitySelector;
-
-import java.awt.*;
-import java.io.IOException;
 
 public class Controller {
     public Button button;
@@ -26,6 +22,7 @@ public class Controller {
     public Label wind_speed;
     public Label humidity;
     public Label temperature;
+
     private History history;
 
 
@@ -34,6 +31,7 @@ public class Controller {
         CitySelector citySelector = new CitySelector("src/ro/mta/selab/resources/cities.txt", box_countries, box_cities);
         history = new History("src/ro/mta/selab/history.txt");
 
+        // when items from first box change, update second box
         box_countries.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2) {
@@ -43,7 +41,7 @@ public class Controller {
 
     }
 
-    public void searchTemp() throws IOException {
+    public void searchTemp() throws Exception {
         String city = box_cities.getSelectionModel().getSelectedItem().toString();
         String country = box_countries.getSelectionModel().getSelectedItem().toString();
 

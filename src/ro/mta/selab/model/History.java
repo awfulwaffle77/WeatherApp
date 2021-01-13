@@ -1,10 +1,7 @@
 package ro.mta.selab.model;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.util.Date;
 import java.time.LocalDate;
 
 public class History {
