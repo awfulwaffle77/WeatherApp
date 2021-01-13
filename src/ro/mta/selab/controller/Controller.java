@@ -42,19 +42,24 @@ public class Controller {
     }
 
     public void searchTemp() throws Exception {
+        if(box_cities.getSelectionModel().getSelectedItem() == null || box_countries.getSelectionModel().getSelectedItem() == null){
+            description.setText("Please select something");
+            return;
+        }
         String city = box_cities.getSelectionModel().getSelectedItem().toString();
         String country = box_countries.getSelectionModel().getSelectedItem().toString();
 
-        history.writeHistory(country, city);
         WeatherAPI weatherAPI = new WeatherAPI();
         Weather weather = new Weather(weatherAPI.getWeather(city, country));
 
+        history.writeHistory(country, city, weather.get("temp"), weather.get("humidity"));
         String descr = weather.get("description");
         String capitalizedDescr = descr.substring(0, 1).toUpperCase() + descr.substring(1);
 
         description.setText(capitalizedDescr);
-        wind_speed.setText("Wind Speed: " + weather.get("speed")+ " m/s");
+        wind_speed.setText("Wind Speed: " + weather.get("speed") + " m/s");
         humidity.setText("Humidity: " + weather.get("humidity") + "%");
+        temperature.setText(weather.get("temp") + "℃");
 
         Image image = new Image(weather.get("icon"));
         weather_icon.setImage(image);

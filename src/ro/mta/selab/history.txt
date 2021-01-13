@@ -1,17 +1,1 @@
-2021-1-13 US Nevada
-2021-1-13 MX Tambuco
-2021-1-13 MX Tambaca
-[2021-1-13] CO Gama
-[2021-1-13] CO Gaira
-[2021-1-13] RO Baia Mare
-[2021-1-13] RO Baia Mare
-[2021-1-13] CO Gama
-[2021-1-13] AR Barrio Nuevo
-[2021-1-13] AR Barrio Nuevo
-[2021-1-13] ES Palau-sator
-[2021-1-13] ES Palau-sator
-[2021-1-13] RO Baia Mare
-[2021-1-13] RO Targoviste
-[2021-1-13] CO Gama
-[2021-1-13] CA Meductic
-[2021-1-13] RO Baia Mare
+[2021-1-13 22:27] CA Meductic -1℃ Humidity 55%
