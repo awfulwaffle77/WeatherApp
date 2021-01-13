@@ -7,6 +7,19 @@ A JavaFX GUI Application written in (**YOU GUESSED IT!**) Java. The countries an
 
 ![Application Image](https://i.imgur.com/SldWqW2.jpg)
 
+## Diagrams
+
+#### Classes diagram
+![Diagram 1](https://i.imgur.com/R6VhSvE.jpg)
+
+#### System Diagram 
+![Diagram 2](https://i.imgur.com/TAirxzO.jpg)
+
+
+## How to set up
+
+I have used [this link](https://openjfx.io/openjfx-docs/), JavaFx and IntelliJ -> Non-Modular from IDE
+
 ## Things to know
 
 - Maven was not used in the development of this application, because I wanted to get more familiar with .jars and IntelliJ.

@@ -3,7 +3,7 @@ package ro.mta.selab.model;
 import java.util.Map;
 
 public class Weather {
-    Map<String, String> weatherObject;
+    private Map<String, String> weatherObject;
 
     public Weather(Map<String, String> map) {
         // change the temp from K to Celsius
