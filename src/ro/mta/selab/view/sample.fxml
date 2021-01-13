@@ -16,7 +16,7 @@
       <AnchorPane prefHeight="392.0" prefWidth="513.0" style="-fx-padding-left: 50px;" styleClass="title">
          <children>
             <Button fx:id="button" layoutX="406.0" layoutY="172.0" mnemonicParsing="false" onAction="#searchTemp" prefHeight="26.0" prefWidth="29.0" text="🔍" />
-            <ImageView fx:id="weather_icon" fitHeight="68.0" fitWidth="69.0" layoutX="55.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="weather_icon" fitHeight="68.0" fitWidth="69.0" layoutX="69.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" />
             <ChoiceBox fx:id="box_countries" layoutX="115.0" layoutY="173.0" prefHeight="26.0" prefWidth="70.0" />
             <ChoiceBox fx:id="box_cities" layoutX="242.0" layoutY="173.0" prefWidth="150.0" />
             <ImageView fitHeight="94.0" fitWidth="123.0" layoutX="27.0" layoutY="21.0" pickOnBounds="true" smooth="false">
