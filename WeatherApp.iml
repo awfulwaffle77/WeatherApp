@@ -47,7 +47,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/dependencies/objenesis-2.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/dependencies/objenesis-3.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -56,7 +56,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/dependencies/byte-buddy-1.6.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/dependencies/byte-buddy-1.10.19.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -65,7 +65,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/dependencies/byte-buddy-agent-1.6.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/dependencies/byte-buddy-agent-1.10.19.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

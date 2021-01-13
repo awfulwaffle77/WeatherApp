@@ -32,5 +32,10 @@ from those, that is the `Parser` class. There were 2 tests made:
 
 For the Mocking part, the choice was obvious, but hard to test. The tested class was `Controller` due to the fact that
 it was the only one including several other classes. The hard part was that due to the fact that it directly 
-communicated with the View component, there were few functionalities to test, but I tried to make the tests as
-exhaustive as possible regarding the use of different functions so as to show that the usage was fully understood.
+communicated with the View component, there were few functionalities to test, but I tried to make the test as
+exhaustive as possible regarding the use of different functions so as to show that the usage of Mockito was fully 
+understood. The test is as follows:
+
+1. Was made to play with the more complex functionalities of Mockito. Due to the fact that creating a JSON as is the 
+one from the GET request is pretty difficult and doesn't represent a priority of this project, I used some predefined 
+variables.
