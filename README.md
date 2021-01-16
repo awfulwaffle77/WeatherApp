@@ -20,6 +20,11 @@ A JavaFX GUI Application written in (**YOU GUESSED IT!**) Java. The countries an
 
 I have used [this link](https://openjfx.io/openjfx-docs/), JavaFx and IntelliJ -> Non-Modular from IDE
 
+Due to the implementation, the files in the `dependencies` folder must be manually added in the project like so: 
+
+In IntteliJ: File->Project Structure->Modules->"+"->JARs or directories, add the .jar files, then select all of them and click Ok.
+
+
 ## Things to know
 
 - Maven was not used in the development of this application, because I wanted to get more familiar with .jars and IntelliJ.
