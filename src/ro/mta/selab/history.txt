@@ -1,2 +1,3 @@
 [2021-1-13 22:27] CA Meductic -1℃ Humidity 55%
 [2021-1-13 22:41] RO Baia Mare -2℃ Humidity 100%
+[2021-1-17 13:52] CA Meductic 0℃ Humidity 100%
