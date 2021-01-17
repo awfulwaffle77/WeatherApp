@@ -5,6 +5,18 @@ import org.json.JSONObject;
 
 import java.util.*;
 
+/**
+ * Used to parse a JSON String.
+ *
+ * <p>Uses the static method to get the required elements from
+ * the arguments. For example, temp is under main, so we request
+ * main and we get all the elements there. It returns this elements
+ * as a Map of String key and String value, this being the most
+ * reasonable choice I have tought of.</p>
+ *
+ * @author awfulwaffle77
+ */
+
 public class Parser {
     public static Map<String, String> ParseJSON(String jsonString, List<String> requiredArgs) throws Exception {
         try {
