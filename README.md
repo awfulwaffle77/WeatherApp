@@ -38,6 +38,10 @@ getting an API Key.
 
 ## Tests
 
+Reading further on the topic of tests, I have realised that my class implementation had no possibility of using
+`@InjectMocks` decorators in testing, due to the fact that the only class that was including others was `Controller` and
+it was only communicating with the UI, making me unable to test it.
+
 ### JUnit
 
 For the unit testing part, I have picked one of the few independent classes and the only one that does something fancy
