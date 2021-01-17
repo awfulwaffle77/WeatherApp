@@ -6,6 +6,13 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+/**
+ * A simple class used only to write a certain
+ * format in the history file.
+ *
+ * @author awfulwaffle77
+ */
+
 public class History {
     private String filename;
 

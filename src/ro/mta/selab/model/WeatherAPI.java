@@ -8,6 +8,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Handles the operations needed to get the JSON response
+ * from the OpenWeatherAPI.
+ *
+ * <p> It is constructed with the needed elements from
+ * the JSON string that will be requested. The getWeather
+ * method handles creating the URL and requesting the JSON
+ * and then sending it to parsing.
+ * </p>
+ *
+ * @see Parser
+ *
+ * @author awfulwaffle77
+ */
 public class WeatherAPI {
     final private String APIKey = "4a901bf01c6279df6fda7143a2d8c9e7";
     final private String baseURL = "https://api.openweathermap.org/data/2.5/weather?q=";

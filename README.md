@@ -36,6 +36,9 @@ getting an API Key.
 
 - The dependencies(the .jar files) are stored in the dependencies folder
 
+- Due to an issue with SceneBuilder, I had to manually add the font. It is located in `resoruces/fonts` and 
+`styles.css` is needed to load the font.
+
 ## Tests
 
 Reading further on the topic of tests, I have realised that my class implementation had no possibility of using

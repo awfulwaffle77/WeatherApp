@@ -2,6 +2,16 @@ package ro.mta.selab.model;
 
 import java.util.Map;
 
+/**
+ * This class holds the objects parsed from Parser.
+ *
+ * <p> Formats the objects from the parser, where this is needed.
+ * For example, it transforms the temperatures from Kelvin to
+ * Celsius and transforms the icon ID to a link.</p>
+ *
+ * @author awfulwaffle77
+ */
+
 public class Weather {
     private Map<String, String> weatherObject;
 

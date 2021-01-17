@@ -13,6 +13,20 @@ import ro.mta.selab.model.Weather;
 import ro.mta.selab.model.WeatherAPI;
 import ro.mta.selab.view.CitySelector;
 
+/**
+ *  Used to make all kind of connections between different classes.
+ *  It gets information from Model and passes it to View to update
+ *  the UI.
+ *
+ *  <p>Uses a WeatherAPI element and a Weather element to
+ *  get information from the API and updates the UI through
+ *  the FXML parameters.</p>
+ *
+ * @see Weather
+ * @see WeatherAPI
+ *
+ * @author awfulwaffle77
+ */
 public class Controller {
     @FXML
     private Button button;
@@ -32,7 +46,6 @@ public class Controller {
     private Label temperature;
 
     private History history;
-
 
     @FXML
     public void initialize() { // init the choice boxes
@@ -54,6 +67,7 @@ public class Controller {
             description.setText("Please select something");
             return;
         }
+        // get selected items
         String city = box_cities.getSelectionModel().getSelectedItem().toString();
         String country = box_countries.getSelectionModel().getSelectedItem().toString();
 

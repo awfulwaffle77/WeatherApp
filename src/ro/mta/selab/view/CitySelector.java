@@ -12,6 +12,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Inserts the information from the input file into the required
+ * ChoiceBox. It also has a short method to update the city box
+ * with cities from the given country.
+ *
+ * @author awfulwaffle77
+ */
 public class CitySelector {
     private ChoiceBox cities;
     private Map<String, ArrayList<String>> listOfCities; // for every country, there is an ArrayList of cities
