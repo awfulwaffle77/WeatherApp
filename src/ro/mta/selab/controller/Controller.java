@@ -14,14 +14,22 @@ import ro.mta.selab.model.WeatherAPI;
 import ro.mta.selab.view.CitySelector;
 
 public class Controller {
-    public Button button;
-    public ImageView weather_icon;
-    public ChoiceBox box_countries;
-    public ChoiceBox box_cities;
-    public Label description;
-    public Label wind_speed;
-    public Label humidity;
-    public Label temperature;
+    @FXML
+    private Button button;
+    @FXML
+    private ImageView weather_icon;
+    @FXML
+    private ChoiceBox box_countries;
+    @FXML
+    private ChoiceBox box_cities;
+    @FXML
+    private Label description;
+    @FXML
+    private Label wind_speed;
+    @FXML
+    private Label humidity;
+    @FXML
+    private Label temperature;
 
     private History history;
 
